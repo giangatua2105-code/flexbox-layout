@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Layout</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- HEADER -->
+      <header class="header">
+        <h1>🌐 My Website</h1>
+        <p>Bố cục responsive với CSS Flexbox</p>
+      </header>
+
+      <!-- NAVIGATION -->
+      <nav class="nav">
+        <ul>
+          <li><a href="#" class="active">🏠 Trang chủ</a></li>
+          <li><a href="#">📄 Giới thiệu</a></li>
+          <li><a href="#">⚙️ Dịch vụ</a></li>
+          <li><a href="#">📝 Blog</a></li>
+          <li><a href="#">📞 Liên hệ</a></li>
+        </ul>
+      </nav>
+
+      <!-- MAIN CONTAINER (Content + Sidebar) -->
+      <div class="main-container">
+        <!-- MAIN CONTENT -->
+        <main class="content">
+          <h2>Nội dung chính</h2>
+          <p>
+            Đây là vùng nội dung chính của trang web được sắp xếp bằng
+            <strong>CSS Flexbox</strong>. Container sử dụng
+            <code>flex: 3</code> để chiếm 3 phần không gian, trong khi sidebar
+            chỉ chiếm <code>flex: 1</code> (1 phần).
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+            amet. Magnam, cumque. Repellendus, ea! Reprehenderit, quod. Ullam,
+            quas. Dolorum, quod. Quos, nemo. Dolore, quod.
+          </p>
+
+          <h3>Ưu điểm của Flexbox</h3>
+          <div class="card-grid">
+            <div class="card">
+              <h4>📐 Layout linh hoạt</h4>
+              <p>Dễ dàng sắp xếp item theo hàng hoặc cột.</p>
+            </div>
+            <div class="card">
+              <h4>📱 Responsive tốt</h4>
+              <p>Tự động co giãn khi màn hình thay đổi.</p>
+            </div>
+            <div class="card">
+              <h4>🎯 Căn giữa dễ dàng</h4>
+              <p>Căn giữa item cả ngang và dọc chỉ với 2 dòng CSS.</p>
+            </div>
+            <div class="card">
+              <h4>⚡ Code ngắn gọn</h4>
+              <p>Ít dòng CSS hơn so với float/position.</p>
+            </div>
+          </div>
+        </main>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+          <h3>📌 Sidebar</h3>
+
+          <div class="widget">
+            <h4>Tin nổi bật</h4>
+            <ul>
+              <li><a href="#">🔥 Flexbox đang thay thế float</a></li>
+              <li><a href="#">📰 10 mẹo CSS hữu ích</a></li>
+              <li><a href="#">💡 Responsive design cơ bản</a></li>
+            </ul>
+          </div>
+
+          <div class="widget">
+            <h4>Quảng cáo</h4>
+            <div class="ad-box">📢 Quảng cáo</div>
+          </div>
+
+          <div class="widget">
+            <h4>Liên kết</h4>
+            <ul>
+              <li><a href="#">MDN Web Docs</a></li>
+              <li><a href="#">CSS-Tricks</a></li>
+              <li><a href="#">W3Schools</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <p>&copy; 2026 My Website - Flexbox Layout | Giang A Tua</p>
+      </footer>
+    </div>
+  </body>
+</html>
